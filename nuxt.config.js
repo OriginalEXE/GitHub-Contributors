@@ -17,6 +17,10 @@ module.exports = {
     link: [
       {
         rel: 'stylesheet',
+        href: 'https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css',
+      },
+      {
+        rel: 'stylesheet',
         href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700',
       },
     ],
@@ -24,6 +28,7 @@ module.exports = {
   loading: false,
   modules: [
     'nuxt-sass-resources-loader',
+    '@nuxtjs/axios',
     '~~/modules/webpack'
   ],
   sassResources: [
