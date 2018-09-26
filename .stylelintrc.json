@@ -1,0 +1,22 @@
+{
+  "processors": ["@mapbox/stylelint-processor-arbitrary-tags"],
+  "extends": ["stylelint-config-primer"],
+  "plugins": ["stylelint-order"],
+  "rules": {
+    "max-line-length": 80,
+    "string-quotes": null,
+    "selector-max-specificity": "1,4,2",
+    "selector-max-type": null,
+    "selector-max-id": null,
+    "selector-max-compound-selectors": 4,
+    "plugin/no-unsupported-browser-features": null,
+    "selector-no-qualifying-type": null,
+    "order/properties-order": [
+      [],
+      {
+        "unspecified": "bottomAlphabetical"
+      }
+    ],
+    "indentation": null
+  }
+}

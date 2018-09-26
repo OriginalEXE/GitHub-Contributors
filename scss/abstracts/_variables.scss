@@ -1,0 +1,10 @@
+// -----------------------------------------------------------------------------
+// Application-wide variables
+// -----------------------------------------------------------------------------
+
+$breakpoints: (
+  'small': '(min-width: 576px)',
+  'medium': '(min-width: 768px)',
+  'large': '(min-width: 992px)',
+  'extralarge': '(min-width: 1140px)',
+) !default;

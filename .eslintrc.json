@@ -1,0 +1,43 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "parserOptions": {
+    "parser": "babel-eslint"
+  },
+  "extends": ["airbnb-base", "plugin:vue/recommended"],
+  "rules": {
+    "indent": ["error", 2, { "SwitchCase": 1 }],
+    "linebreak-style": ["error", "unix"],
+    "quotes": ["error", "single"],
+    "semi": ["error", "always"],
+    "no-console": "off",
+    "space-before-function-paren": ["error", "always"],
+    "import/no-extraneous-dependencies": "off",
+    "import/extensions": "off",
+    "import/no-unresolved": "off",
+    "no-mixed-operators": "off",
+    "strict": 0,
+    "function-paren-newline": ["error", "consistent"],
+    "comma-dangle": ["error", {
+      "arrays": "always-multiline",
+      "objects": "always-multiline",
+      "imports": "always-multiline",
+      "exports": "always-multiline",
+      "functions": "ignore"
+    }],
+    "no-unexpected-multiline": ["off"],
+    "no-spaced-func": ["off"],
+    "func-call-spacing": ["error", "always", {"allowNewlines": true}],
+    "import/prefer-default-export": ["off"],
+    "no-underscore-dangle": "off",
+    "vue/html-indent": ["error", 2, {
+      "attribute": 0
+    }]
+  },
+  "plugins": ["html", "import"],
+  "settings": {
+    "html/html-extensions": [".html"]
+  }
+}

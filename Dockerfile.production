@@ -1,0 +1,19 @@
+FROM node:10.10
+
+# set working directory
+RUN mkdir /usr/src/app
+WORKDIR /usr/src/app
+
+# add `/usr/src/app/node_modules/.bin` to $PATH
+ENV PATH /usr/src/app/node_modules/.bin:$PATH
+
+ENV NODE_ENV production
+
+# install and cache app dependencies
+COPY package.json /usr/src/app/package.json
+RUN npm install
+
+RUN npm run build
+
+# start app
+CMD ["npm", "start"]

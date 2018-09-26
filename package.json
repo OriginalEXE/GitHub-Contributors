@@ -1,0 +1,59 @@
+{
+  "private": true,
+  "config": {
+    "nuxt": {
+      "host": "0.0.0.0",
+      "port": "3000"
+    }
+  },
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "lint": "eslint --ext .js,.vue --ignore-path .eslintignore . && stylelint **/*.scss, **/*.vue --config .stylelintrc.json --syntax scss --cache --cache-location \"./node_modules/.stylelintcache/\""
+  },
+  "dependencies": {
+    "chartist": "^0.11.0",
+    "fluture": "^10.1.0",
+    "nuxt": "^2.0.0",
+    "sanctuary": "^0.15.0",
+    "sanctuary-def": "^0.18.1"
+  },
+  "devDependencies": {
+    "@mapbox/stylelint-processor-arbitrary-tags": "^0.2.0",
+    "babel-eslint": "^10.0.0",
+    "eslint": "^5.6.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-loader": "^2.1.1",
+    "eslint-plugin-html": "^4.0.6",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-vue": "^4.7.1",
+    "node-sass": "^4.9.3",
+    "nuxt-sass-resources-loader": "^2.0.5",
+    "sass-loader": "^7.1.0",
+    "stylelint": "^9.5.0",
+    "stylelint-config-primer": "^2.2.10",
+    "stylelint-order": "^1.0.0",
+    "stylelint-webpack-plugin": "^0.10.5"
+  },
+  "browserslist": [
+    " > 0.05%",
+    "not dead",
+    "not android 4.1",
+    "not android 4.2",
+    "not android 4.4",
+    "not android 4.4.3",
+    "not chrome 29",
+    "not chrome 43",
+    "not chrome 49",
+    "not chrome 54",
+    "not firefox 47",
+    "not firefox 48",
+    "not firefox 51",
+    "not firefox 52",
+    "not ios 8.1",
+    "not ios 9.3",
+    "not safari 5.1",
+    "not safari 9.1"
+  ]
+}
