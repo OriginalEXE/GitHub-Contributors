@@ -2,10 +2,32 @@
 An example nuxt.js app for analyzing contributors stats across the GitHub
 repositories.
 
+## Before you begin
+GitHub is heavily limitinh unauthenticated API requests.
+Follow these steps to generate an auth token needed for the app to work:
+
+1. Go to [Personal access tokens](https://github.com/settings/tokens) page
+2. Generate new token and grant it only `public_repo` (under `repo`) scope
+3. Copy the generated token, go to the project root folder and create a new
+file, call it `.github.json`
+4. Paste the following in it:
+```
+{
+  "GITHUB_USERNAME": "YOUR_USERNAME",
+  "GITHUB_PASSWORD": "GENERATED_TOKEN"
+}
+```
+
+Of course, replace the placeholders with your GitHub username and token
+respectively
+
 ## Development
 Before you start, make sure you have installed:
 - docker
 - docker-compose
+
+You can also `npm install` and run the project directly but docker is
+recommended
 
 To start, go to the root directory of the project and run:
 (NOTE: You can skip the first two lines if there are no new npm dependencies and/or updates)
