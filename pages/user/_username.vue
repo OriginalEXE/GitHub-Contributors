@@ -56,7 +56,9 @@ export default {
 <template>
   <BasePage class="UserPage">
     <template v-if="!this.$route.params.repo">
-      <BasePageTitle>{{ this.$route.params.username }}'s repos</BasePageTitle>
+      <header>
+        <BasePageTitle>{{ this.$route.params.username }}'s repos</BasePageTitle>
+      </header>
       <p v-if="!repos.length">
         No repositories found for this user
       </p>

@@ -14,7 +14,9 @@ export default {
 
 <template>
   <BasePage class="IndexPage">
-    <BasePageTitle>GitHub Contributors</BasePageTitle>
+    <header>
+      <BasePageTitle>GitHub Contributors</BasePageTitle>
+    </header>
     <div class="IndexPage-intro">
       <p>
         Search for GitHub users and their repositories.

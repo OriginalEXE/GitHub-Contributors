@@ -17,7 +17,9 @@ export default {
 
 <template>
   <BasePage class="SearchPage">
-    <BasePageTitle>Repository Search</BasePageTitle>
+    <header>
+      <BasePageTitle>Repository Search</BasePageTitle>
+    </header>
     <GitHubRepoSelect/>
   </BasePage>
 </template>
