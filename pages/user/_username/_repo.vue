@@ -104,6 +104,11 @@ export default {
       class="ct-chart ct-square"
       />
     </no-ssr>
+    <p>
+      <nuxt-link to="/search">
+        Back to search
+      </nuxt-link>
+    </p>
   </div>
 </template>
 
