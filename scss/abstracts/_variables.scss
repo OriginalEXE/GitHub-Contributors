@@ -2,6 +2,11 @@
 // Application-wide variables
 // -----------------------------------------------------------------------------
 
+$primary-color: #d87576;
+$secondary-color: #5e52d8;
+
+$body-font-family: 'Source Sans Pro', sans-serif;
+
 $breakpoints: (
   'small': '(min-width: 576px)',
   'medium': '(min-width: 768px)',

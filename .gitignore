@@ -36,6 +36,7 @@ dist
 
 # Configuration files
 .env
+.github.json
 
 # Nuxt build
 .nuxt

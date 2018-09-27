@@ -1,0 +1,24 @@
+@charset 'UTF-8';
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  color: #525f7f;
+  font-family: $body-font-family;
+  font-size: rem-calc(16);
+  line-height: 1.5;
+}
+
+// Add page transition effect
+.page-enter,
+.page-leave-active {
+  opacity: 0;
+}

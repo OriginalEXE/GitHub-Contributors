@@ -1,8 +1,12 @@
 /* eslint-disable no-param-reassign */
 const path = require('path');
 const StyleLintPlugin = require('stylelint-webpack-plugin');
+import githubConfig from './.github.json';
 
 module.exports = {
+  env: {
+    ...githubConfig,
+  },
   head: {
     title: 'GitHub Contributors',
     meta: [
@@ -17,18 +21,17 @@ module.exports = {
     link: [
       {
         rel: 'stylesheet',
-        href: 'https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css',
-      },
-      {
-        rel: 'stylesheet',
         href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700',
       },
     ],
   },
   loading: false,
+  css: [
+    'normalize.css',
+    '@/scss/global.scss',
+  ],
   modules: [
     'nuxt-sass-resources-loader',
-    '@nuxtjs/axios',
     '~~/modules/webpack'
   ],
   sassResources: [
