@@ -42,10 +42,6 @@ up-to-date versions of dependencies, check package.json
 - Role: A lightweight charting library
 - Version: 0.11.x
 
-### [Sanctuary](https://sanctuary.js.org/)
-- Role: Provides functional programming utilities
-- Version: 0.15.x
-
 ### [Fluture](https://github.com/fluture-js/Fluture)
 - Role: An algebraic counterpart to Promises
 - Version: 10.x
