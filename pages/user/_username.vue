@@ -73,9 +73,11 @@ export default {
       </template>
     </template>
     <template v-else>
-      <BasePageTitle>
-        {{ this.$route.params.username }} / {{ this.$route.params.repo }}
-      </BasePageTitle>
+      <header>
+        <BasePageTitle>
+          {{ this.$route.params.username }} / {{ this.$route.params.repo }}
+        </BasePageTitle>
+      </header>
       <nuxt-child/>
     </template>
   </BasePage>
