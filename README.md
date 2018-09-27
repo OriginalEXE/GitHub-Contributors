@@ -49,3 +49,7 @@ up-to-date versions of dependencies, check package.json
 ### [Fluture](https://github.com/fluture-js/Fluture)
 - Role: An algebraic counterpart to Promises
 - Version: 10.x
+
+### [axios](https://github.com/axios/axios)
+- Role: HTTP client
+- Version: 0.18.x
