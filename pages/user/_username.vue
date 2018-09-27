@@ -54,7 +54,7 @@ export default {
 </script>
 
 <template>
-  <BasePage class="IndexPage">
+  <BasePage class="UserPage">
     <template v-if="!this.$route.params.repo">
       <BasePageTitle>{{ this.$route.params.username }}'s repos</BasePageTitle>
       <p v-if="!repos.length">
