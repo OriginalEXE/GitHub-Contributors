@@ -63,7 +63,7 @@ export default {
           }
 
           return {
-            contributors: data.map (
+            contributors: data.slice (0, 10).map (
               item => ({
                 name: item.login,
                 contributions: item.contributions,
