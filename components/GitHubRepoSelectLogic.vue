@@ -34,6 +34,17 @@ export default {
     },
   },
   methods: {
+    setFocusOnList () {
+      const firstListItem = this.$el.querySelector (
+        '.js-selectable-list-items-item-link'
+      );
+
+      if (!firstListItem) {
+        return;
+      }
+
+      firstListItem.focus ();
+    },
     setStatus (status) {
       this.status = status;
     },
@@ -50,6 +61,7 @@ export default {
       this.users = users.map (
         user => ({
           label: user.login,
+          thumb: user.avatar_url,
         })
       );
     },
@@ -60,6 +72,14 @@ export default {
           url: `/user/${repo.full_name}`,
         })
       );
+
+      // To allow for easier keyboard navigation, we steal the focus
+      // after the repos are shown and place it on the first item in a list
+      if (this.repos.length) {
+        this.$nextTick (() => {
+          this.setFocusOnList ();
+        });
+      }
     },
     searchUsers: throttle (function searchUsers () {
       cancelSearchUsers ();
