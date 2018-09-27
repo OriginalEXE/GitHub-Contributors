@@ -22,3 +22,8 @@ body {
 .page-leave-active {
   opacity: 0;
 }
+
+a {
+  color: $secondary-color;
+  text-decoration: none;
+}
